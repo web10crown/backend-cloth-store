@@ -5,7 +5,7 @@ const multer = require("multer");
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors("https://crown-cloth-store.onrender.com/"));
 
 app.use(express.static("public"));
 app.use("/images", express.static("images"));
